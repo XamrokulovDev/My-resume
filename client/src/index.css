@@ -4,6 +4,10 @@ html {
     overflow-x: hidden;
 }
 
+.list {
+    list-style: disc !important;
+}
+
 ::-webkit-scrollbar {
     width: 15px;
 }
