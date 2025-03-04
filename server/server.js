@@ -3,6 +3,9 @@ const app = express();
 require('dotenv').config();
 const connectDb = require('./config/mongoose');
 
+// MongoDb connection 
+connectDb();
+
 // PORT and Listening to the server
 const PORT = process.env.PORT;
 const start = () => {

@@ -2,7 +2,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Routerlayout from "./layout";
 import Home from "./pages/home";
 import Project from "./pages/project";
-import Contact from "./pages/contact";
+import Contact from "./pages/technologies";
 import Experience from "./pages/experience";
 
 const App = () => {
@@ -24,7 +24,7 @@ const App = () => {
           element: <Project />
         },
         {
-          path: "/contact",
+          path: "/technologies",
           element: <Contact />
         }
       ]

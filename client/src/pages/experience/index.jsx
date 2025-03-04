@@ -6,7 +6,7 @@ const Experience = () => {
       initial={{ x: 100, opacity: 0 }}
       animate={{ x: 0, opacity: 1 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
-      className="container h-full bg-white rounded-2xl overflow-y-scroll p-10"
+      className="container h-[72vh] bg-white rounded-2xl overflow-y-scroll p-5"
     >
       <div className="flex flex-col gap-3">
         <h1 className="text-2xl font-bold text-center">
@@ -36,7 +36,7 @@ const Experience = () => {
           </ul>
         </div>
         <div className="">
-          <h2 className="text-lg font-medium mt-3 mb-2">
+          <h2 className="text-lg font-medium mt-4 mb-2">
             <span className="font-bold">Backend Development:</span>
             I have gained experience in building complex systems, managing data efficiently, and ensuring seamless system integrations.
           </h2>
