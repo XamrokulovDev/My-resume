@@ -1,10 +1,25 @@
 const express = require('express');
 const app = express();
+const bodyParser = require('body-parser');
+const cors = require('cors');
 require('dotenv').config();
 const connectDb = require('./config/mongoose');
 
-// MongoDb connection 
+// MongoDb connection
 connectDb();
+
+// Middlewares
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+const optionsCors = {
+    origin: '*',
+    optionsSuccessStatus: 200,
+    methods: ['GET', 'POST', 'PUT', 'DELETE']
+}
+app.use(cors(optionsCors));
+
+// Routes
+app.use('/api/v1/skills', require('./routes/skill.route'));
 
 // PORT and Listening to the server
 const PORT = process.env.PORT;

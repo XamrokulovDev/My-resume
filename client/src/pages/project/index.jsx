@@ -34,7 +34,7 @@ const Project = () => {
     >
       <div className="flex flex-col gap-8">
         <h1 className="text-2xl font-bold text-center">My Projects</h1>
-        <div className="grid grid-cols-3 gap-5">
+        <div className="grid grid-cols-4 max-md:grid-cols-1 max- gap-5">
           {
             data.map((item) => (
               <div onClick={() => window.location.href = item.link} key={item.id} className="flex flex-col gap-2 rounded-xl overflow-hidden shadow cursor-pointer hover:shadow-lg hover:translate-y-[-8px] transition-all duration-500">

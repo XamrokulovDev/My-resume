@@ -1,17 +1,18 @@
 const mongoose = require("mongoose");
 
 const skillSchema = new mongoose.Schema({
-    name: {
-        type: String,
-        required: true,
-    },
-    image: {
+    title: {
         type: String,
         required: true,
     },
     description: {
         type: String,
         required: true,
+    },
+    degree:{
+        type: String,
+        enum: ["beginner", "intermediate", "high"],
+        default: "beginner",
     },
 },{
     timestamps: true,
