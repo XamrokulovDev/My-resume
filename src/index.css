@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+html {
+    overflow-x: hidden;
+}
+
+.list {
+    list-style: disc !important;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #dcdcdc;
+    border-radius: 10px;
+}
+
+.container {
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: 0px) and (max-width: 768px) {
+    .container {
+        width: 90vw;
+    }
+}
