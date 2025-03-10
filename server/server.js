@@ -20,6 +20,7 @@ app.use(cors(optionsCors));
 
 // Routes
 app.use('/api/v1/skills', require('./routes/skill.route'));
+app.use('/api/v1/projects', require('./routes/project.router'));
 
 // PORT and Listening to the server
 const PORT = process.env.PORT;
